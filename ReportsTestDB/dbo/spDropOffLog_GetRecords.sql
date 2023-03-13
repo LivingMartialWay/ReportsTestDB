@@ -1,6 +1,11 @@
 ﻿CREATE PROCEDURE [dbo].[spDropOffLog_GetRecords]
-	@param1 int = 0,
-	@param2 int
+	@startDate datetime,
+	@endDate datetime
 AS
-	SELECT @param1, @param2
-RETURN 0
+begin
+	set nocount on;
+
+select * from dbo.ReportTestTable r
+where @startDate <= r.DeliveredWhen and @endDate >= r.DeliveredWhen
+
+end
