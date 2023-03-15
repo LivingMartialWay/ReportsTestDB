@@ -25,5 +25,20 @@ namespace ReportsTestLibary.Data
                                                 "SqlDb",
                                                 false);
         }
+
+        public void CreateRecord(string deliveryType,
+                                 DateTime deliveredWhen,
+                                 string deliveredby,
+                                 string businessName,
+                                 string deliveredTo,
+                                 string itemType,
+                                 string checkNo,
+                                 string recievedBy
+                                 )
+        {
+            // INSERT INTO ReportTestTable (DeliveryType, DeliveredWhen, DeliveredBy, BusinessName, DeliveredTo, ItemType, CheckNo, RecievedBy)
+            // VALUES (@deliveryType, @deliveredWhen, @deliveredby, @businessName, @deliveredTo, @itemType, @checkNo, @recievedBy);
+
+        }
     }
 }
