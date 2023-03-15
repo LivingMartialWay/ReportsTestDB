@@ -20,10 +20,10 @@ namespace ReportsTestLibary.Data
 
         public List<DropOffModel> GetDropOffRecord(DateTime startDate, DateTime endDate)
         {
-           return _db.LoadData<DropOffModel, dynamic>("dbo.spDropOffLog_GetRecords",
+           return _db.LoadData<DropOffModel, dynamic>("select * from dbo.ReportTestTable r where @startDate <= r.DeliveredWhen and @endDate >= r.DeliveredWhen",
                                                 new { startDate, endDate },
                                                 "SqlDb",
-                                                true);
+                                                false);
         }
     }
 }
