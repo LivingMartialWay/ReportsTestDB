@@ -10,6 +10,13 @@ namespace ReportTestWeb.Pages
 
         public void OnGet()
         {
+
+        }
+
+        public IActionResult OnPost()
+        {
+            return Page();
+
         }
     }
 }
