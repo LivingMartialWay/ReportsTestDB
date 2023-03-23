@@ -1,7 +1,13 @@
+using ReportsTestLibary.Data;
+using ReportsTestLibary.Databases;
+using ReportsTestLibrary.Databases;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<IDatabaseData, SqlData>();
+builder.Services.AddTransient<IDataAccess, SqlDataAccess>();
 
 var app = builder.Build();
 

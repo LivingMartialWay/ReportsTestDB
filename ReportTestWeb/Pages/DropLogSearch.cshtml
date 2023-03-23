@@ -9,13 +9,56 @@
 <form method="post">
     <div class="form-group">
         <label asp-for="@Model.StartDate" />
-        <input type="date" asp-for="@Model.StartDate" /> 
+        <input asp-for="@Model.StartDate" /> 
     </div>
 
         <div class="form-group">
         <label asp-for="@Model.EndDate" />
-        <input type="date" asp-for="@Model.EndDate" /> 
+        <input asp-for="@Model.EndDate" /> 
     </div>
     <button type="submit" class="btn btn-primary">Search</button>
 
 </form>
+
+@if (Model.DropOffRecords?.Count > 0)
+{
+    <br />
+    <h2>Results</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>DeliveryType</th>
+                <th>DeliveredWhen</th>
+                <th>DeliveredBy</th>
+                <th>BusinessName</th>
+                <th>DeliveredTo</th>
+                <th>ItemType</th>
+                <th>CheckNo</th>
+                <th>RecievedBy</th>
+                <th>ProcessedBy</th>
+                <th>ProcessedDate</th>
+                <th>Update/Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dropOff in Model.DropOffRecords)
+            {
+                <tr>
+                    <td>@dropOff.DeliveryType</td>
+                    <td>@dropOff.DeliveredWhen</td>
+                    <td>@dropOff.DeliveredBy</td>
+                    <td>@dropOff.BusinessName</td>
+                    <td>@dropOff.DeliveredTo</td>
+                    <td>@dropOff.ItemType</td>
+                    <td>@dropOff.CheckNo</td>
+                    <td>@dropOff.RecievedBy</td>
+                    <td>@dropOff.ProcessedBy</td>
+                    <td>@dropOff.ProcessedDate</td>
+                    <td><a asp-page="/update" asp-route-roomtypeid="@dropOff.DeliveredWhen" 
+                           asp-route-startdate="@Model.StartDate.ToShortDateString()"
+                           asp-route-enddate="@Model.EndDate.ToShortDateString()">Mark Processed</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
