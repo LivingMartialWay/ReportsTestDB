@@ -33,7 +33,7 @@ namespace ReportTestWeb.Pages
         {
             if (SearchEnabled == true)
             {
-                DropOffRecords = _db.GetDropOffRecord(StartDate, EndDate);
+                DropOffRecords = _db.GetDropOffRecordList(StartDate, EndDate);
             }
         }
 

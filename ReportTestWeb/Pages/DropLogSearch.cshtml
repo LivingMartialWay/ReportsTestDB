@@ -54,9 +54,7 @@
                     <td>@dropOff.RecievedBy</td>
                     <td>@dropOff.ProcessedBy</td>
                     <td>@dropOff.ProcessedDate</td>
-                    <td><a asp-page="/update" asp-route-roomtypeid="@dropOff.DeliveredWhen" 
-                           asp-route-startdate="@Model.StartDate.ToShortDateString()"
-                           asp-route-enddate="@Model.EndDate.ToShortDateString()">Mark Processed</a></td>
+                    <td><a asp-page="/DropLogUpdate" asp-route-recno="@dropOff.RecNo">Mark Processed</a></td>
                 </tr>
             }
         </tbody>
