@@ -13,7 +13,7 @@ namespace ReportTestWeb.Pages
 
         [DataType(DataType.Date)]
         [BindProperty (SupportsGet = true)]
-        public DateTime StartDate { get; set; } = DateTime.Now;
+        public DateTime StartDate { get; set; }
 
         [DataType(DataType.Date)]
         [BindProperty(SupportsGet = true)]
