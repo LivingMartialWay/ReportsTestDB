@@ -1,0 +1,24 @@
+
+
+
+Overall Steps:
+ [X] Read
+ [X] Create
+ [ ] Update
+	- Link to Update from List
+	- Boxes that fill & can be edited
+	- 
+
+ [ ] Delete 
+
+
+
+// SqlData.cs
+1. Create a "GetSingleRecord" method?
+
+
+// IDatabaseData.cs
+1. Edit the public interface to include 
+	X) Methods from ... ? 
+	X) CheckInGuest --> 
+
