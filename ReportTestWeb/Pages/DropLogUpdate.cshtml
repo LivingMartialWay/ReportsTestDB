@@ -1,0 +1,64 @@
+﻿@page
+@model ReportTestWeb.Pages.DropLogUpdateModel
+@{
+
+
+}
+
+
+<h1>Update Some Shit</h1>
+>
+<p>
+    Update a Record.
+</p>
+<form method="post">
+    @foreach (var dropOff in Model.DropOffRecord)
+    {
+      <div class="form-group">
+        <label asp-for="@Model.DeliveryType"></label>
+        <input asp-for="@Model.DeliveryType" value=@dropOff.DeliveryType />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredWhen"></label>
+        <input asp-for="@Model.DeliveredWhen" value=@dropOff.DeliveredWhen/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredBy"></label>
+        <input asp-for="@Model.DeliveredBy" value=@dropOff.DeliveredBy/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.BusinessName"></label>
+        <input asp-for="@Model.BusinessName" value=@dropOff.BusinessName/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredTo"></label>
+        <input asp-for="@Model.DeliveredTo" value=@dropOff.DeliveredTo/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ItemType"></label>
+        <input asp-for="@Model.ItemType" value=@dropOff.ItemType/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.CheckNo"></label>
+        <input asp-for="@Model.CheckNo" value=@dropOff.CheckNo />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.RecievedBy"></label>
+        <input asp-for="@Model.RecievedBy" value=@dropOff.RecievedBy />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ProcessedBy"></label>
+        <input asp-for="@Model.ProcessedBy" value=@dropOff.ProcessedBy/>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ProcessedDate"></label>
+        <input asp-for="@Model.ProcessedDate" value=@dropOff.ProcessedDate/>
+    </div>  
+    }
+
+    
+
+    <button type="submit" class="btn btn-primary">Update Record</button>
+</form>
+
+

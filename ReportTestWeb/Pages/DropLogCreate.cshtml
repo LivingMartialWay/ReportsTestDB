@@ -1,0 +1,57 @@
+﻿@page
+@model ReportTestWeb.Pages.DropLogCreateModel
+@{
+
+
+}
+
+
+<h1>Try & Create Some Shit</h1>
+>
+<p>
+    Attempt to create a record.
+</p>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.DeliveryType"></label>
+        <input asp-for="@Model.DeliveryType" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredWhen"></label>
+        <input asp-for="@Model.DeliveredWhen" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredBy"></label>
+        <input asp-for="@Model.DeliveredBy" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.BusinessName"></label>
+        <input asp-for="@Model.BusinessName" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.DeliveredTo"></label>
+        <input asp-for="@Model.DeliveredTo" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ItemType"></label>
+        <input asp-for="@Model.ItemType" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.CheckNo"></label>
+        <input asp-for="@Model.CheckNo" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.RecievedBy"></label>
+        <input asp-for="@Model.RecievedBy" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ProcessedBy"></label>
+        <input asp-for="@Model.ProcessedBy" />
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.ProcessedDate"></label>
+        <input asp-for="@Model.ProcessedDate" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Record</button>
+</form>

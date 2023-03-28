@@ -13,12 +13,21 @@ Overall Steps:
 
 
 
+
+
 // SqlData.cs
-1. Create a "GetSingleRecord" method?
+(Split out the single load / single update / single delete)
+
+1. Create a "GetDropOffRecordSingle" method.
+	- Parameter of RecNo
+
+2. Create a "UpdateSingleRecord" method.
+
+3. Create a "DeleteSingleRecord" method.
 
 
 // IDatabaseData.cs
 1. Edit the public interface to include 
 	X) Methods from ... ? 
-	X) CheckInGuest --> 
+	X) CheckInGuest --> (Include recNo as parameter?)
 

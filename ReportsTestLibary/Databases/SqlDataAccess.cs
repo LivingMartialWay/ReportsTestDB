@@ -6,8 +6,9 @@ using System.Linq;
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using ReportsTestLibrary.Databases;
 
-namespace HotelAppLibrary.Databases
+namespace ReportsTestLibary.Databases
 {
     public class SqlDataAccess : IDataAccess
     {

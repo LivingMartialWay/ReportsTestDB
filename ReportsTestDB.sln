@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ReportsTestDB", "ReportsTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportsTestLibary", "ReportsTestLibary\ReportsTestLibary.csproj", "{72C4B5FA-B026-4B45-9296-8C6ACC6118C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportTestWeb", "ReportTestWeb\ReportTestWeb.csproj", "{192D02E8-6027-4ECE-8203-4D30A4A5FAD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReportTestWeb", "ReportTestWeb\ReportTestWeb.csproj", "{192D02E8-6027-4ECE-8203-4D30A4A5FAD2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28B37F1A-F5D3-4741-BE3E-78D838149795}"
 	ProjectSection(SolutionItems) = preProject

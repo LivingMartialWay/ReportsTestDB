@@ -1,5 +1,6 @@
-﻿
-namespace HotelAppLibrary.Databases
+﻿using System.Collections.Generic;
+
+namespace ReportsTestLibrary.Databases
 {
     public interface IDataAccess
     {
