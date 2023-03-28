@@ -86,7 +86,7 @@ namespace ReportsTestLibary.Data
                                  DateTime processedDate
                                  )
         {
-        _db.SaveData("UPDATE dbo.ReportTestTable SET DeliveryType = @deliveryType, DeliveredWhen = @deliveredWhen, DeliveredBy = @deliveredBy, BusinessName = @businessName, DeliveredTo =dTo, ItemType = @itemType, CheckNo = @checkNo, RecievedBy = @recievedBy, ProcessedBy = @processedBy, ProcessedDate = @processedDate WHERE @RecNo = RecNo",
+        _db.SaveData("UPDATE dbo.ReportTestTable SET DeliveryType = @deliveryType, DeliveredWhen = @deliveredWhen, DeliveredBy = @deliveredBy, BusinessName = @businessName, DeliveredTo =@DeliveredTo, ItemType = @itemType, CheckNo = @checkNo, RecievedBy = @recievedBy, ProcessedBy = @processedBy, ProcessedDate = @processedDate WHERE @RecNo = RecNo",
                          new
                          {   RecNo,
                              deliveryType = deliveryType,
